@@ -6,8 +6,8 @@ import plotly.express as px
 # =============================
 # IDENTITAS MAHASISWA
 # =============================
-NAMA = "Haydar Fahri Alaudin"
-NIM = "32602300010"
+NAMA = "Ivan Adnan Bayu Pratama"
+NIM = "32602300012"
 # =============================
 # PAGE CONFIG
 # =============================
@@ -55,6 +55,7 @@ st.markdown(
 st.markdown(
     """
     <style>
+    /* Styling seluruh aplikasi */
     .stApp {
         background: linear-gradient(135deg, #667eea, #764ba2);
     }
@@ -64,21 +65,44 @@ st.markdown(
     section * {
         color: white;
     }
+    /* Styling Metric Card */
     .metric-card {
-        background: rgba(0,0,0,0.85);
-        color: white;
+        background: rgba(0,0,0,0.85); /* Warna background lebih gelap */
         border-radius: 18px;
         padding: 22px;
         text-align: center;
         box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+        color: #fff !important;
     }
     .metric-card h4 {
-        color: #000000;
+        color: #e3e3e3; /* Warna teks "Total Data", "Rata-rata", dll */
         margin-bottom: 6px;
     }
     .metric-card h2 {
-        color: #333333;
+        color: white; /* Warna teks angka di dalam box */
         font-weight: 700;
+    }
+    /* Styling Sidebar */
+    [data-testid="stSidebar"] {
+        background: rgba(0,0,0,0.85); /* Background sidebar lebih gelap */
+        color: #ffffff; /* Warna teks sidebar */
+        padding-left: 20px; /* Tambah padding */
+        padding-right: 20px;
+    }
+    [data-testid="stSidebar"] a {
+        text-decoration: none; /* Teks link sidebar */
+        color: #00c3ff;
+    }
+    [data-testid="stSidebar"] a:hover {
+        color: #00ffff; /* Warna hover link di sidebar */
+    }
+    [data-baseweb="select"] > div {
+        color: #111827; /* Warna teks pilihan dropdown */
+        background-color: #ffffff; /* Background dropdown */
+    }
+    [data-baseweb="input"] > div > input {
+        color: #111827; /* Warna teks input */
+        background-color: #ffffff; /* Background input */
     }
     </style>
     """,
