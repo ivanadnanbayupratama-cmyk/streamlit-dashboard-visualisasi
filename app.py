@@ -65,18 +65,19 @@ st.markdown(
         color: white;
     }
     .metric-card {
-        background: rgba(255,255,255,0.92);
+        background: rgba(0,0,0,0.85);
+        color: white;
         border-radius: 18px;
         padding: 22px;
         text-align: center;
         box-shadow: 0 12px 30px rgba(0,0,0,0.25);
     }
     .metric-card h4 {
-        color: #1f7a8c;
+        color: #000000;
         margin-bottom: 6px;
     }
     .metric-card h2 {
-        color: #023047;
+        color: #333333;
         font-weight: 700;
     }
     </style>
